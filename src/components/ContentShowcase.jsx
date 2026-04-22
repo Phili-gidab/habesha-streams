@@ -26,7 +26,7 @@ const ContentShowcase = () => {
   return (
     <section className="showcase" id="content">
       <div className="container">
-        <div className="showcase__header animate-fade-in-up">
+        <div className="showcase__header reveal">
           <p className="showcase__label">Explore Our Library</p>
           <h2 className="showcase__title">
             Discover <span className="text-gold">Authentic Stories</span>
@@ -58,6 +58,11 @@ const ContentShowcase = () => {
                   {card.badge}
                 </span>
               )}
+              <div className="showcase__card-play">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
             </div>
           ))}
         </div>

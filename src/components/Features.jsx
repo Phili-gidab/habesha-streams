@@ -35,7 +35,7 @@ const Features = () => {
   return (
     <section className="features" id="features">
       <div className="container">
-        <div className="features__header">
+        <div className="features__header reveal">
           <p className="features__label">Why Habesha Streams</p>
           <h2 className="features__title">
             Built for the <span className="text-gold">World</span>
@@ -45,8 +45,8 @@ const Features = () => {
           {features.map((f, i) => (
             <div
               key={i}
-              className="feature-card animate-fade-in-up"
-              style={{ animationDelay: `${i * 0.1}s`, opacity: 0 }}
+              className="feature-card reveal"
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="feature-card__icon">{f.icon}</div>
               <h3 className="feature-card__title">{f.title}</h3>

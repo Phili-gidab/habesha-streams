@@ -6,10 +6,14 @@ import Pricing from './components/Pricing';
 import SocialProof from './components/SocialProof';
 import DownloadCTA from './components/DownloadCTA';
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
+import ScrollAnimations from './components/ScrollAnimations';
 
 const App = () => {
   return (
     <>
+      <CustomCursor />
+      <ScrollAnimations />
       <Navbar />
       <Hero />
       <ContentShowcase />
